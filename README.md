@@ -176,7 +176,7 @@ Final answer streamed token by token
 
 ---
 ## Architecture (Full)
-![Architecture](images/OpenChat_AI.png)
+![Architecture](./Images/OpenChat_AI.png)
 
 
 ## 1. System Architecture (Full)
