@@ -1,0 +1,141 @@
+# ============================================================================
+# SECRETS & CREDENTIALS — never commit these
+# ============================================================================
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+secrets.json
+config.local.py
+
+# ============================================================================
+# PYTHON
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+*.spec
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+finetune_env/
+*_env/
+
+# ============================================================================
+# AI / ML — large files, auto-downloaded on first run
+# ============================================================================
+
+# HuggingFace model cache (multi-GB, auto-downloaded)
+~/.cache/huggingface/
+.cache/
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+
+# Sentence transformer cache
+sentence_transformers_cache/
+
+# ============================================================================
+# CHROMADB — regenerate with: python ingest.py
+# ============================================================================
+chroma_db/
+chroma/
+*.chroma
+chroma.sqlite3
+*.sqlite3
+*.sqlite
+
+# ============================================================================
+# CRAWLER CACHE — regenerate with: python ingest.py
+# ============================================================================
+crawl_results.json
+
+# ============================================================================
+# LOGS & DEBUG
+# ============================================================================
+*.log
+logs/
+*.pid
+
+# ============================================================================
+# OS FILES
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ============================================================================
+# IDE & EDITORS
+# ============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+*.iml
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# ============================================================================
+# TESTING
+# ============================================================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# ============================================================================
+# FLASK
+# ============================================================================
+instance/
+.webassets-cache
+flask_session/
+
+# ============================================================================
+# MISC
+# ============================================================================
+*.bak
+*.tmp
+*.temp
+tmp/
+temp/
