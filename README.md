@@ -422,7 +422,10 @@ Triggers a fresh crawl and re-index of the knowledge base.
 
 ---
 
+## 🎬 See It in Action
+![](./Images/weather-mcp.png) ![](./Images/confluence-rag.png)
 
+---
 ## 📄 License
 
 MIT License — feel free to use and modify.

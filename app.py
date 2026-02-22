@@ -380,9 +380,10 @@ def process_chat_streaming(user_message: str) -> Generator[str, None, None]:
         # Stream acknowledgment
         print(f"  💬 Generating acknowledgment for {tool_name}...")
         ack = generate_acknowledgment(tool_name, tool_args)
+        ack = ack.strip().strip('"').strip("'")   # remove quotes model adds
         for char in ack:
             yield char
-        yield "\n\n"
+        yield "\n\n[TOOL_EXECUTING]\n\n" 
 
         # Execute tool
         print(f"  🔧 Calling tool: {tool_name} with args: {tool_args}")
